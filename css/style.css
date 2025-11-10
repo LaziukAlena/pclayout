@@ -625,6 +625,10 @@ progress::-moz-progress-value {
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
 }
 
+.modal__inner {
+  position: relative; /* важно, чтобы крестик позиционировался относительно окна */
+}
+
 .modal__close {
   position: absolute;
   top: 10px;
@@ -635,6 +639,7 @@ progress::-moz-progress-value {
   color: #333;
   cursor: pointer;
   transition: 0.3s ease;
+  line-height: 1;
 }
 
 .modal__close:hover {
