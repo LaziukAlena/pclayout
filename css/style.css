@@ -606,8 +606,22 @@ progress::-moz-progress-value {
 }
 
 .modal__input input {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  background: transparent;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0 3rem;
+}
+
+.modal__input input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.modal__input input:focus {
+  outline: 2px solid #7c6afa;
+  background-color: #3a3a3a;
 }
 
 .modal__input:not(:last-child) {
